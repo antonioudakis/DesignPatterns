@@ -58,3 +58,37 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.apache.ivyde.eclipse 1 0 2017-01-11 10:38:57.629
 !MESSAGE IvyDE plugin started
+!SESSION 2017-01-24 10:54:41.993 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=el_GR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-01-24 10:55:08.269
+!MESSAGE An internal error occurred during: "Fetch all notifications".
+!STACK 0
+java.lang.ClassCastException: org.json.simple.JSONObject cannot be cast to org.json.simple.JSONArray
+	at com.vaadin.integration.eclipse.notifications.model.NotificationsService.getNotifications(NotificationsService.java:487)
+	at com.vaadin.integration.eclipse.notifications.model.NotificationsService.access$2(NotificationsService.java:474)
+	at com.vaadin.integration.eclipse.notifications.model.NotificationsService$3.accept(NotificationsService.java:389)
+	at com.vaadin.integration.eclipse.notifications.model.NotificationsService$3.accept(NotificationsService.java:1)
+	at com.vaadin.integration.eclipse.notifications.model.NotificationsService.doGet(NotificationsService.java:418)
+	at com.vaadin.integration.eclipse.notifications.model.NotificationsService.getNotifications(NotificationsService.java:397)
+	at com.vaadin.integration.eclipse.notifications.model.NotificationsService.getAllNotifications(NotificationsService.java:142)
+	at com.vaadin.integration.eclipse.notifications.jobs.FetchNotificationsJob.run(FetchNotificationsJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-01-24 10:55:09.678
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2017-01-24 10:55:25.561
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2017-01-24 10:55:25.596
+!MESSAGE IvyDE plugin started
